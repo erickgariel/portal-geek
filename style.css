@@ -1,0 +1,152 @@
+body{
+    background-color: black;
+	overflow-x: hidden;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+.slider{
+	margin: 0 auto;
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.slides{
+	width: 400%;
+	height: 400px;
+	display: flex;
+}
+
+.slides input{
+	display: none;
+}
+
+.slide{
+	width: 25%;
+	position: relative;
+	transition: 2s;
+}
+
+.slide img{
+	width: 800px;
+}
+
+.manual-navegacao{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+	border: 2px solid #FFF;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+	margin-right: 35px;
+}
+.manual-btn:hover{
+
+	background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -50%;
+}
+
+.navegacao div{
+	border: 2px solid #FFF;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.navegacao{
+	position: absolute;
+	width: 800px;
+	margin-top: 360px;
+	display: flex;
+	justify-content: center;
+}
+
+.navegacao div:not(:last-child){
+	margin-right: 35px;
+}
+
+#radio1:checked ~.navegacao .manual-btn1{
+	background-color: #FFF;
+}
+
+#radio2:checked ~.navegacao .manual-btn2{
+	background-color: #FFF;
+}
+
+#radio3:checked ~.navegacao .manual-btn3{
+	background-color: #FFF;
+}
+
+.navegacao-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacao-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao-auto div:not(:last-child){
+    margin-right: 35px;
+}
+
+#radio1:checked ~ .navegacao-auto .radio-btn1{
+    background-color: #FFF;
+}
+
+#radio2:checked ~ .navegacao-auto .radio-btn2{
+    background-color: #FFF;
+}
+
+#radio3:checked ~ .navegacao-auto .radio-btn3{
+    background-color: #FFF;
+}
+
+.corpo{
+	margin: 50px;
+}
+
+hr{
+	margin: 30px;
+}
+
+p{
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+
